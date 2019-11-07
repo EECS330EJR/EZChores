@@ -1,2 +1,2 @@
-# EZChores
-made as revenge for all of the terrible roommates
+# project5
+Basic instructions go here.
