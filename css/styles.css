@@ -1,8 +1,12 @@
-.actions{
+.actions {
+  text-align: right;
 }
 
+.mdc-card {
+  /* width: 500px; */
+}
 .mdc-data-table {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 /* The Modal (background) */
