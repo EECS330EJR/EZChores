@@ -18,7 +18,7 @@ function addRow(e){
     <div class="actions">
       <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
       <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
-      <button onclick="sendNotif()" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
+      <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
     </div>
   </td>
 
