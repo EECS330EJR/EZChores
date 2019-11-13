@@ -2,6 +2,10 @@
   text-align: right;
 }
 
+#add-item {
+  float: right;
+}
+
 .mdc-card {
   /* width: 500px; */
 }
