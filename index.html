@@ -35,11 +35,12 @@
           <thead>
 
               <tr class="mdc-data-table__row">
-                  <td class="mdc-data-table__cell" onclick="addRow()">
-                    <button class="mdc-icon-button material-icons add-button">add</button>
-                  </td>
                   <td class="mdc-data-table__cell">
-                    Add New Item
+                    <button onclick="addRow(this)" class="mdc-icon-button material-icons add-button">add</button>
+                    <div class="mdc-text-field mdc-text-field--no-label">
+                        <input type="text" class="mdc-text-field__input" placeholder="New Item" aria-label="Label">
+                        <div class="mdc-line-ripple"></div>
+                    </div>
                   </td>
               </tr>
             <tr class="mdc-data-table__header-row">

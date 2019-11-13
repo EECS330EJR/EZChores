@@ -1,12 +1,14 @@
 // const button = document.querySelector(".foo-button");
 // mdc.ripple.MDCRipple.attachTo(button);
 
-function addRow(){
+function addRow(e){
+  console.log(e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value)
   var para = document.createElement("TR");
   para.setAttribute("class", "mdc-data-table__row");
-  
+  item_name = e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value
+
   para.innerHTML = `
-  <td class="mdc-data-table__cell">whatever u want</td>
+  <td class="mdc-data-table__cell">`+item_name+`</td>
   <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value=2 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
   <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value =1 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
   <td class="mdc-data-table__cell">
