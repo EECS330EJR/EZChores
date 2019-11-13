@@ -12,7 +12,7 @@ function addRow(){
   <td class="mdc-data-table__cell">
     <div class="actions">
       <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
-      <button class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
+      <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
       <button class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
     </div>
   </td>
@@ -21,6 +21,10 @@ function addRow(){
   
   var element = document.getElementById("table-body");
   element.appendChild(para);
+}
 
-
+function removeRow(e){
+  console.log(e.parentNode.parentNode.parentNode)
+  var elem = e.parentNode.parentNode.parentNode
+  elem.parentNode.removeChild(elem);
 }
