@@ -2,7 +2,10 @@
 // mdc.ripple.MDCRipple.attachTo(button);
 
 function addRow(e){
-  console.log(e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value)
+  if (e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value.length == 0){
+    alert("FILL IN THE NAME BRO!!!!11!");  	
+    return false; 
+  }
   var para = document.createElement("TR");
   para.setAttribute("class", "mdc-data-table__row");
   item_name = e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value
