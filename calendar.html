@@ -39,19 +39,49 @@
     </div>
   </header>
 
-  <div class="mdc-card">
-    Chore input
+  <div class="mdc-card" id="calendar-card">
 
-    Assigned To Selector
+    <div class="mdc-text-field mdc-text-field--no-label">
+      <input type="text" class="mdc-text-field__input" placeholder="New Chore Name" aria-label="Label">
+      <div class="mdc-line-ripple"></div>
+    </div>
 
-    Due Date input
 
-    Submit button
 
-    <iframe src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_p5b44pe4fqc4snq619u5qbom14%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    Select A Roommate
+    <ul id="my-list" class="mdc-list" role="listbox">
+      <li class="mdc-list-item" role="option" tabindex="0">
+        <span class="mdc-list-item__text">Evan N</span>
+      </li>
+      <li class="mdc-list-item" role="option">
+        <span class="mdc-list-item__text">Rey T </span>
+      </li>
+      <li class="mdc-list-item" role="option">
+        <span class="mdc-list-item__text">John Nguyen</span>
+      </li>
+    </ul>
+
+    
+    <div class="mdc-text-field mdc-text-field--no-label">
+      <input type="text" class="mdc-text-field__input" placeholder="Due Date" aria-label="Label">
+      <div class="mdc-line-ripple"></div>
+    </div>
+
+    <button class="mdc-button">
+        <div class="mdc-button__ripple"></div>
+        <span class="mdc-button__label">Submit</span>
+    </button>
+    
 
   </div>
 
+
+  <div id="calendar">
+    <iframe
+      src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_p5b44pe4fqc4snq619u5qbom14%40group.calendar.google.com&ctz=America%2FChicago"
+      style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
+    </iframe>
+  </div>
 
 
 </body>

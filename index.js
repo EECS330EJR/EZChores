@@ -1,5 +1,17 @@
 // const button = document.querySelector(".foo-button");
 // mdc.ripple.MDCRipple.attachTo(button);
+import { MDCList } from '@material/list';
+
+import { MDCTextField } from '@material/textfield';
+
+
+const list = new MDCList(document.querySelector('.mdc-list'));
+const list = new MDCList(document.getElementById('my-list'));
+list.singleSelection = true;
+
+
+const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+
 
 function addRow(e){
   if (e.parentNode.getElementsByClassName("mdc-text-field__input")[0].value.length == 0){

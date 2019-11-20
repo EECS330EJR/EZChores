@@ -1,3 +1,10 @@
+#calendar-card {
+  padding-top: 150px;
+}
+#calendar {
+  text-align: center;
+}
+
 .actions {
   text-align: right;
 }
