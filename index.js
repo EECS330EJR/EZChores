@@ -1,8 +1,27 @@
 // const button = document.querySelector(".foo-button");
 // mdc.ripple.MDCRipple.attachTo(button)
 
+function addChore(e){
 
-const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+  let names = ``
+  for(i = 0; i < 3; i++){
+
+    if(document.getElementsByClassName('mdc-form-field')[i].childNodes[1].childNodes[1].checked == true){
+      console.log(document.getElementsByClassName('mdc-form-field')[i].outerText)
+      names += `` + document.getElementsByClassName('mdc-form-field')[i].outerText
+    }
+
+  }
+  let name = document.getElementsByClassName('chore-name')[0].value
+  let date = document.getElementsByClassName('chore-date')[0].value
+
+
+  var para = document.createElement("h1");
+  para.innerHTML = ``+name+`     `+date+`<br>`+names;
+
+  var element = document.getElementById("calendar-card");
+  element.appendChild(para);
+}
 
 
 function addRow(e){
