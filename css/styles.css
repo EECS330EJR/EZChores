@@ -1,3 +1,20 @@
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+@import "@material/select/mdc-select";
+
+.demo-width-class {
+  width: 400px;
+}
+#calendar-card {
+  padding-top: 130px;
+  padding-bottom: 100;
+}
+#calendar {
+  padding-top: 30px;
+  text-align: center;
+}
+
 .actions {
   text-align: right;
 }
