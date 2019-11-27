@@ -49,7 +49,6 @@ function addRow(e){
       <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
     </div>
   </td>
-
   `;
   
   var element = document.getElementById("table-body");
@@ -65,4 +64,71 @@ function removeRow(e){
   console.log(e.parentNode.parentNode.parentNode)
   var elem = e.parentNode.parentNode.parentNode
   elem.parentNode.removeChild(elem);
+}
+
+// For Spinner Stuff
+
+var ArrayRoommates = ["", "", ""];
+var ArrayChores = ["", "", "", "", "", ""];
+var RoommatesNo = 3;
+var ChoresNo = 6;
+var ChoresCounter=0;
+var fakeCounter=0;
+
+/* function colorChores() {
+	//document.getElementById("").rows[1].style.color = "black";
+	/*var x = document.getElementsById("chore-1");
+	x.style.font-color = "red"; 
+
+	var x = document.getElementsByClassName("chore-1")
+	x[0].style.font-color = "white";
+	x[0].style.color = "black";
+	//Change Colors with Each Call
+	if (ChoresCounter == 0) {
+		ArrayChores[ChoresCounter].style.font-color = "white";
+		ArrayChores[ChoresCounter].style.background-color = "black";
+		ChoresCounter++;
+	}
+	else if (ChoresCounter < 6 & ChoresCounter != 0) {
+		var PrevChoresCounter = ChoresCounter - 1;
+		ArrayChores[PrevChoresCounter].style.font-color = "black";
+		ArrayChores[PrevChoresCounter].style.background-color = "chore";
+		ArrayChores[ChoresCounter].style.font-color = "white";
+		ArrayChores[ChoresCounter].style.background-color = "black";
+		ChoresCounter++;
+	}
+	else if (ChoresCounter == 6) {
+		ChoresCounter = 0;
+	}
+	*/
+
+
+function randomizeMe() {
+	fakeSpin();
+	fakeCounter++;
+}
+
+function fakeSpin(){
+	var fakeName = "";
+	var fakeTask = "";
+	if (fakeCounter == 0)
+		{ 
+		fakeName = "Evan";
+		fakeTask = "Wash Dishes";
+		alert(fakeName + " will " + fakeTask);
+	}
+	else if (fakeCounter == 1) {
+		fakeName = "John";
+		fakeTask = "Clean Fridge";
+		alert(fakeName + " will " + fakeTask);
+	}
+	else if (fakeCounter == 2) {
+		fakeName = "Rey";
+		fakeTask = "Sweep Floors";
+		alert(fakeName + " will " + fakeTask);
+	}
+	else {
+		alert("That's all the spins we have today, folks!");
+	} 
+
 }
