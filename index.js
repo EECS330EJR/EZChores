@@ -66,3 +66,127 @@ function removeRow(e){
   var elem = e.parentNode.parentNode.parentNode
   elem.parentNode.removeChild(elem);
 }
+
+// For Spinner Stuff
+
+var RoommatesArray = ["", "", ""];
+var ChoresArray = ["", "", "", "", "", ""];
+var RoommatesNo = 3;
+var ChoresNo = 6;
+var roommateCounter=0;
+var realCounter=0;
+
+function randomizeMe() {
+	fillRoommatesArray();
+	fillChoresArray();
+	roommatePicker();
+	colorSpin();
+	setTimeout(assignTask, 2700);
+}
+
+function fillRoommatesArray() {
+	for (i=0; i<RoommatesNo; i++) {
+		RoommatesArray[i]="roommate-" + i.toString();
+	}
+}
+
+function fillChoresArray() {
+	for (i=0; i<ChoresNo; i++) {
+		ChoresArray[i]="chore-" + i.toString();
+	}
+}
+
+function roommatePicker() {
+	//Sets Prev Counter
+	var prevroommateCounter = roommateCounter - 1;
+	if (prevroommateCounter == -1) {
+		prevroommateCounter = 2;
+	}
+
+	//Sets Color Elem
+	var currRoommate = document.getElementById(RoommatesArray[roommateCounter]);
+	var prevRoommate = document.getElementById(RoommatesArray[prevroommateCounter]);
+
+	//Change Color
+	currRoommate.style.color = "white";
+	currRoommate.style.backgroundColor = "#6200ee";
+	prevRoommate.style.color = "black";
+	prevRoommate.style.backgroundColor = "white";
+
+
+	//Resets the counter
+	roommateCounter++;
+	if (roommateCounter == RoommatesNo) {
+		roommateCounter = 0;
+	}
+}
+
+//Changes Color
+function colorChange() {
+	//Sets Prev Counter
+	var prevCounter = realCounter - 1;
+	if (prevCounter == -1) {
+		prevCounter = 5;
+	}
+
+	//Set Color Elem
+	var currChore = document.getElementById(ChoresArray[realCounter]);
+	var prevChore = document.getElementById(ChoresArray[prevCounter]);
+
+	//Change Colors
+	currChore.style.color = "white";
+	currChore.style.backgroundColor = "#6200ee";
+	prevChore.style.color = "black";
+	prevChore.style.backgroundColor = "white";
+
+	//Resets the Counter
+	realCounter++;
+	if (realCounter == ChoresNo) {
+		realCounter = 0;
+	}
+}
+
+//"Spins" the Color
+function colorSpin() {
+	//Go!
+	var colorTimer = setInterval(colorChange, 50);
+	//Go faster after 1 sec!
+	setTimeout(colorSpin1, 1000);
+	//Stop after 2.25 sec!
+	setTimeout(function() {
+		clearInterval(colorTimer);
+		//clearInterval(colorTimer1);
+		//clearInterval(colorTimer2);
+	} , 2650);
+}
+
+//Function for the second 'speed' for the spinner
+function colorSpin1() {
+	var colorTimer1 = setInterval(colorChange, 20);
+	setTimeout(function(){clearInterval(colorTimer1);}, 1000);
+}
+
+//Function to 'assign' the task
+function assignTask() {
+	//Setting the 'correct' ID for roommates since the counters are currently 1 plus the index highlight
+	var assignChoreCounter = realCounter - 1;
+	var assignRoommateCounter = roommateCounter -1;
+	if (assignChoreCounter < 0) {
+		assignChoreCounter = ChoresNo - 1;
+	}
+	if (assignRoommateCounter < 0) {
+		assignRoommateCounter = RoommatesNo - 1;
+	}
+
+	//Assigning Counter to ID
+	var assignRoommateID = RoommatesArray[assignRoommateCounter];
+	var assignChoreID = ChoresArray[assignChoreCounter];
+
+	//Assigning ID to Strings
+	var assignRoommateName = document.getElementById(assignRoommateID).innerHTML;
+	var assignChoreName = document.getElementById(assignChoreID).innerHTML;
+
+	//Notification!
+	alert(assignRoommateName + "will" + assignChoreName);
+
+}
