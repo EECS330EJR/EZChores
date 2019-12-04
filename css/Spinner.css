@@ -30,11 +30,14 @@
 }
 
 .roommate-container {
-	height:50%;
-	margin-top: -175px;
+	height: 50%;
 	width: 80%;
-	position:relative;
+	position:absolute;
 	text-align:center;
+}
+
+.Roommates-Table {
+	margin-top: -150px
 }
 
 .Chores-Table {
@@ -51,4 +54,27 @@ table, th, td {
 td {
 	height:45px;
 	font-size: 25px;
+}
+
+.spin-button {
+	display: inline-block;
+	color:white;
+	font-size:24px;
+	cursor:pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background-color: red;
+	box-shadow: 0 9px #999;
+	border: none;
+}
+
+.spin-button:hover {
+	background-color:#8b0000;
+}
+
+.spin-button:active {
+	background-color:#8b0000;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
