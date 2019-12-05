@@ -6,6 +6,15 @@
   font: Verdana, Arial, 'sans-serif' !important;/* <-- fonts */
 }
 
+#actions-header{
+  text-align: left;
+  padding-left: 40px;
+}
+#inventory {
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+}
 .demo-width-class {
   width: 400px;
 }
@@ -22,7 +31,7 @@
 }
 
 .actions {
-  text-align: right;
+
 }
 
 #add-item {
