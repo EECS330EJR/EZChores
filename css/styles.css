@@ -2,6 +2,9 @@
 @import "@material/menu-surface/mdc-menu-surface";
 @import "@material/menu/mdc-menu";
 @import "@material/select/mdc-select";
+* {
+  font: Verdana, Arial, 'sans-serif' !important;/* <-- fonts */
+}
 
 .demo-width-class {
   width: 400px;
