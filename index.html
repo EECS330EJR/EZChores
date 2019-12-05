@@ -45,16 +45,6 @@
     <div class="mdc-data-table" id="test">
         <table class="mdc-data-table__table" aria-label="Dessert calories">
           <thead>
-
-              <tr class="mdc-data-table__row">
-                  <td class="mdc-data-table__cell">
-                    <div class="mdc-text-field mdc-text-field--no-label">
-                        <input type="text" class="mdc-text-field__input" placeholder="New Item" aria-label="Label">
-                        <div class="mdc-line-ripple"></div>
-                    </div>
-                    <button onclick="addRow(this)" style=""class="mdc-icon-button material-icons add-button">add</button>
-                  </td>
-              </tr>
             <tr class="mdc-data-table__header-row">
               <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Supply</th>
               <th class="mdc-data-table__header-cell mdc-data-table__header-cell--numeric" role="columnheader" scope="col">Need</th>
@@ -78,7 +68,6 @@
               </td>
               <td class="mdc-data-table__cell">
                 <div class="actions">
-                  <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
                   <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
                   <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
                 </div>
@@ -100,7 +89,6 @@
               </td>
               <td class="mdc-data-table__cell">
                 <div class="actions">
-                  <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
                   <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
                   <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
                 </div>
@@ -118,7 +106,6 @@
               <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value =1 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
               <td class="mdc-data-table__cell">
                 <div class="actions">
-                  <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
                   <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
                   <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
                 </div>
@@ -126,7 +113,18 @@
             </tr>
 
 
+
+
           </tbody>
+          <tr class="mdc-data-table__row">
+              <td class="mdc-data-table__cell">
+                <div class="mdc-text-field mdc-text-field--no-label">
+                    <input type="text" class="mdc-text-field__input" placeholder="New Item" aria-label="Label">
+                    <div class="mdc-line-ripple"></div>
+                </div>
+                <button onclick="addRow(this)" style=""class="mdc-icon-button material-icons add-button">add</button>
+              </td>
+          </tr>
         </table>
     </div>
   </div>

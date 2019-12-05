@@ -27,7 +27,6 @@ function addRow(e){
   <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value =0 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
   <td class="mdc-data-table__cell">
     <div class="actions">
-      <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
       <button onclick="removeRow(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">delete</i></button>
       <button onclick="sendNotif(this)" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">notifications</i></button>
     </div>
