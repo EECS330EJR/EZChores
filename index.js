@@ -40,7 +40,7 @@ function addRow(e){
 function sendNotif(e){
   console.log(e.parentNode.parentNode.parentNode.getElementsByClassName("mdc-data-table__cell"))
   let item_name = e.parentNode.parentNode.parentNode.getElementsByClassName("mdc-data-table__cell")[0]
-  alert("NOTIFIED YOUR BROS TO PICKUP SOME "+item_name);  	
+  alert("NOTIFIED YOUR BROS TO PICKUP SOME AWESOME HOUSE SUPPLIES");  	
   
 }
 function removeRow(e){
