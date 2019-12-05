@@ -81,3 +81,10 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+/* Stuff for the Homepage */
+.hometext{
+  padding-top: 50px;
+  text-align: center;
+}
+
