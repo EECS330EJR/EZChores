@@ -23,8 +23,8 @@ function addRow(e){
       <div class="mdc-line-ripple"></div>
     </div>
   </td>
-  <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value=2 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
-  <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value =1 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
+  <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value=0 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
+  <td class="mdc-data-table__cell mdc-data-table__cell--numeric"><input value =0 type="number" min=0 max=99 step=1 style="text-align:left; width:35px"></td>
   <td class="mdc-data-table__cell">
     <div class="actions">
       <button id="myBtn" class="foo-button mdc-button"><i class="material-icons mdc-button__icon">edit</i></button>
@@ -39,7 +39,7 @@ function addRow(e){
   element.appendChild(para);
 }
 function sendNotif(e){
-  console.log(e.parentNode.parentNode.parentNode.getElementsByClassName("mdc-data-table__cell")[0])
+  console.log(e.parentNode.parentNode.parentNode.getElementsByClassName("mdc-data-table__cell"))
   let item_name = e.parentNode.parentNode.parentNode.getElementsByClassName("mdc-data-table__cell")[0]
   alert("NOTIFIED YOUR BROS TO PICKUP SOME "+item_name);  	
   
