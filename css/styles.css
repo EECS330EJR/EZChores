@@ -21,12 +21,14 @@
 #calendar-card {
   float:left;
   width: 400px;
-  margin-top: 150px;
+  margin-top: 180px;
+  margin-left: 300px;
   padding-bottom: 100;
 }
 .calendar {
   float: right;
   padding-top: 150px;
+  margin-right: 200px;
   text-align: center;
 }
 
