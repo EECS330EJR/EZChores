@@ -2,21 +2,36 @@
 @import "@material/menu-surface/mdc-menu-surface";
 @import "@material/menu/mdc-menu";
 @import "@material/select/mdc-select";
+* {
+  font: Verdana, Arial, 'sans-serif' !important;/* <-- fonts */
+}
 
+#actions-header{
+  text-align: left;
+  padding-left: 40px;
+}
+#inventory {
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+}
 .demo-width-class {
   width: 400px;
 }
 #calendar-card {
-  padding-top: 130px;
+  float:left;
+  width: 400px;
+  margin-top: 150px;
   padding-bottom: 100;
 }
-#calendar {
-  padding-top: 30px;
+.calendar {
+  float: right;
+  padding-top: 150px;
   text-align: center;
 }
 
 .actions {
-  text-align: right;
+
 }
 
 #add-item {
@@ -24,10 +39,9 @@
 }
 
 .mdc-card {
-  /* width: 500px; */
 }
 .mdc-data-table {
-    margin-top: 200px;
+    margin-top: 110px;
 }
 
 /* The Modal (background) */
@@ -67,3 +81,10 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+/* Stuff for the Homepage */
+.hometext{
+  padding-top: 50px;
+  text-align: center;
+}
+

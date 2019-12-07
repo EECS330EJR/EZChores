@@ -1,0 +1,80 @@
+/** CSS for the Spinner! **/
+
+.left-side-container {
+	padding-top:56px;
+	position: relative;
+	width: 75%;
+	height: 650px;
+	float: left;
+	text-align:center;
+}
+
+.right-side-container {
+	padding-top:56px;
+	position:relative;
+	width: 25%;
+	height:650px;
+	float: right;
+	text-align:center;
+
+}
+
+.spin-button {
+	height:33%;
+	width: 80%;
+	position: relative;
+	border: 5px solid #6200ee;
+	font-size:35px;
+	font-color: white;
+	text-align:center;
+}
+
+.roommate-container {
+	height: 50%;
+	width: 80%;
+	position:absolute;
+	text-align:center;
+}
+
+.Roommates-Table {
+	margin-top: -150px
+}
+
+.Chores-Table {
+	width: 100%; 
+	text-align:center; 
+	margin-top:125px; 
+
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+	height:45px;
+	font-size: 25px;
+}
+
+.spin-button {
+	display: inline-block;
+	color:white;
+	font-size:24px;
+	cursor:pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	background-color: red;
+	box-shadow: 0 9px #999;
+	border: none;
+}
+
+.spin-button:hover {
+	background-color:#8b0000;
+}
+
+.spin-button:active {
+	background-color:#8b0000;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}

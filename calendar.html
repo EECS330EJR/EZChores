@@ -23,22 +23,25 @@
   <header class="mdc-top-app-bar">
     <div class="mdc-top-app-bar__row">
       <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-        <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
         <span class="mdc-top-app-bar__title">EZChores</span>
       </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-        <a href="./index.html">
-          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">home</button>
+      <section>
+	<a href="./homepage.html" title="Home Page" style="color: white; margin: 0px 50px 50px 50px;">
+          Home
         </a>
-        <a href="./calendar.html">
-          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">calendar_today</button>
+        <a href="./calendar.html" title="Chore Calender" style="color: white; margin: 0px 50px 0px 50px;">
+          Calendar
         </a>
-
-
+        <a href="./index.html" title="Inventory Page" style="color: white; margin: 0px 50px 0px 50px;">
+          Inventory
+        </a>
+        <a href="./Spinner.html" title="Chore Spinner"style="color: white; margin: 0px 50px 0px 50px;">
+          Spinner
+        </a>
       </section>
     </div>
   </header>
-
+  
   <div class="mdc-card" id="calendar-card">
 
     <div class="mdc-text-field mdc-text-field--no-label">
@@ -91,13 +94,12 @@
   </div>
 
 
-  <div id="calendar">
-    <iframe
-      src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_p5b44pe4fqc4snq619u5qbom14%40group.calendar.google.com&ctz=America%2FChicago"
-      style="border: 0" width="800" height="600" frameborder="0" scrolling="no">
-    </iframe>
+  <div id="calendar1" class="calendar">
+    <iframe src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_fdo8hg25jg8ng4n33tnibqf2dc%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
-
+  <div id="calendar2" class="calendar">
+      <iframe src="https://calendar.google.com/calendar/embed?src=u.northwestern.edu_plnla4ugnqqkg79g59qpn43l4g%40group.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </div>
 
 </body>
 </html>
